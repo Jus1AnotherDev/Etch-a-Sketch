@@ -1,0 +1,25 @@
+:root {
+  --rows: 16;
+  --columns: 16;
+}
+
+h1 {
+  text-align: center;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+}
+
+#container {
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(var(--columns), auto);
+    grid-template-rows: repeat(var(--rows), auto);
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    height: 750px;
+    width: 750px;
+  }
